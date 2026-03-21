@@ -1,0 +1,42 @@
+/* Importação da fonte para ficar igual ao site */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* FORÇAR DESIGN TÉCNICO - ACLIS */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #ffffff;
+  color: #1a1a1a;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ❌ FORÇAR TAMANHO DAS IMAGENS (PARA NÃO EXPLODIREM) */
+img {
+  max-width: 100%; /* Nunca ultrapassa a largura da tela */
+  height: auto; /* Mantém a proporção */
+  display: block; /* Remove espaços vazios embaixo */
+}
+
+/* ✅ CENTRALIZAR AS FOTOS E LIMITAR A LARGURA (MAX 800px) */
+/* Isso substitui a classe 'max-w-4xl' do Tailwind que não está rodando */
+main > div.space-y-16 > div {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  background-color: #f8fafc;
+  border-radius: 20px;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+  margin-bottom: 30px; /* Espaço entre as fotos */
+}
+
+/* Centralizar o FAQ */
+#faq-section {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
