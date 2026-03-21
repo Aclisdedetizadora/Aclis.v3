@@ -216,9 +216,9 @@ export default function App() {
                <section id="servicos">
             <h2 style={{color: 'var(--verde-aclis)', textAlign: 'center'}}>Soluções Especializadas</h2>
             <div className="servicos-grid">
-                <article className="card-servico"><h3>Controle Residencial</h3><p>Proteção técnica contra insetos e roedores, preservando a saúde e higiene do ambiente doméstico.</p></article>
-                <article className="card-servico"><h3>Controle Comercial</h3><p>Gestão sanitária rigorosa para empresas, assegurando conformidade com as normas técnicas.</p></article>
-                <article className="card-servico"><h3>Controle Predial</h3><p>Tratamento estratégico de áreas comuns em condomínios com foco em prevenção e manutenção.</p></article>
+                <article className="card-servico"><h3>Residencial</h3><p>Proteção técnica contra insetos e roedores, preservando a saúde e higiene do ambiente doméstico.</p></article>
+                <article className="card-servico"><h3>Comercial</h3><p>Gestão sanitária rigorosa para empresas, assegurando conformidade com as normas técnicas.</p></article>
+                <article className="card-servico"><h3>Predial</h3><p>Tratamento estratégico de áreas comuns em condomínios com foco em prevenção e manutenção.</p></article>
             </div>
         </section>
 
