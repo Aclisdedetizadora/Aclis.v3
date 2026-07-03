@@ -1,41 +1,41 @@
 import React, { useState } from 'react';
 
-export default function App() {
+// export default function App() {
   // --- LÓGICA DA CALCULADORA (TABELA OFICIAL ACLIS) ---
-  const tabelaPrecos = [
-    { m2: 'Até 50m²', tabela: 280, vista: 266 },
-    { m2: 'Até 70m²', tabela: 340, vista: 323 },
-    { m2: 'Até 90m²', tabela: 400, vista: 380 },
-    { m2: 'Até 110m²', tabela: 470, vista: 446.50 },
-    { m2: 'Até 130m²', tabela: 540, vista: 513 },
-    { m2: 'Até 150m²', tabela: 620, vista: 589 },
-    { m2: 'Até 170m²', tabela: 700, vista: 665 },
-    { m2: 'Até 190m²', tabela: 790, vista: 750.50 },
-    { m2: 'Até 210m²', tabela: 850, vista: 807.50 },
-  ];
+ // const tabelaPrecos = [
+   // { m2: 'Até 50m²', tabela: 280, vista: 266 },
+    //{ m2: 'Até 70m²', tabela: 340, vista: 323 },
+    //{ m2: 'Até 90m²', tabela: 400, vista: 380 },
+    //{ m2: 'Até 110m²', tabela: 470, vista: 446.50 },
+    //{ m2: 'Até 130m²', tabela: 540, vista: 513 },
+    //{ m2: 'Até 150m²', tabela: 620, vista: 589 },
+    //{ m2: 'Até 170m²', tabela: 700, vista: 665 },
+    //{ m2: 'Até 190m²', tabela: 790, vista: 750.50 },
+    //{ m2: 'Até 210m²', tabela: 850, vista: 807.50 },
+  //];
 
-  const regioesSp = [
-    { nome: 'Vila Maria, Guilherme, Santana ou Tucuruvi', taxa: 0, zona: 'VERDE' },
-    { nome: 'Zona Norte (Outros), Centro ou Próximo à ZL', taxa: 40, zona: 'AMARELA' },
-    { nome: 'Zona Oeste, Zona Sul (Pinheiros/Itaim) ou Guarulhos', taxa: 70, zona: 'LARANJA' },
-    { nome: 'Extremo Sul, Extremo Leste ou ABC', taxa: 100, zona: 'VERMELHA' },
-  ];
+//  const regioesSp = [
+  //  { nome: 'Vila Maria, Guilherme, Santana ou Tucuruvi', taxa: 0, zona: 'VERDE' },
+    //{ nome: 'Zona Norte (Outros), Centro ou Próximo à ZL', taxa: 40, zona: 'AMARELA' },
+    //{ nome: 'Zona Oeste, Zona Sul (Pinheiros/Itaim) ou Guarulhos', taxa: 70, zona: 'LARANJA' },
+//    { nome: 'Extremo Sul, Extremo Leste ou ABC', taxa: 100, zona: 'VERMELHA' },
+//  ];
 
-  const [dados, setDados] = useState({ nome: '', indexPreco: 0, indexZona: 0 });
+//  const [dados, setDados] = useState({ nome: '', indexPreco: 0, indexZona: 0 });
 
-  const servicoBase = tabelaPrecos[dados.indexPreco];
-  const taxaDeslocamento = regioesSp[dados.indexZona].taxa;
-  const totalParcelado = servicoBase.tabela + taxaDeslocamento;
-  const valorParcela = totalParcelado / 6;
-  const totalVista = servicoBase.vista + taxaDeslocamento;
+//  const servicoBase = tabelaPrecos[dados.indexPreco];
+//  const taxaDeslocamento = regioesSp[dados.indexZona].taxa;
+ // const totalParcelado = servicoBase.tabela + taxaDeslocamento;
+  //const valorParcela = totalParcelado / 6;
+  //const totalVista = servicoBase.vista + taxaDeslocamento;
 
-  const enviarCotacao = (e) => {
-    e.preventDefault();
-    const mensagem = `Olá Aclis! Gostaria de agendar um serviço:\n👤 Nome: ${dados.nome}\n🏠 Metragem: ${servicoBase.m2}\n📍 Região: ${regioesSp[dados.indexZona].nome}\n💳 Opção Parcelada: 6x de R$ ${valorParcela.toFixed(2).replace('.', ',')}\n💰 Opção à Vista: R$ ${totalVista.toFixed(2).replace('.', ',')}`;
-    window.open(`https://wa.me/5511947030789?text=${encodeURIComponent(mensagem)}`, '_blank');
-  };
+  //const enviarCotacao = (e) => {
+   // e.preventDefault();
+    //const mensagem = `Olá Aclis! Gostaria de agendar um serviço:\n👤 Nome: ${dados.nome}\n🏠 Metragem: ${servicoBase.m2}\n📍 Região: ${regioesSp[dados.indexZona].nome}\n💳 Opção Parcelada: 6x de R$ ${valorParcela.toFixed(2).replace('.', ',')}\n💰 Opção à Vista: R$ ${totalVista.toFixed(2).replace('.', ',')}`;
+   // window.open(`https://wa.me/5511947030789?text=${encodeURIComponent(mensagem)}`, '_blank');
+  //};
 
-  return (
+  //return (
     <div className="aclis-site-container">
       <style>{`
         :root {
@@ -173,7 +173,7 @@ export default function App() {
       <main>
         {/* SEÇÃO PROMOCIONAL - LETRAS AUMENTADAS */}
         <section className="secao-promocional-fundo">
-            <h2 style={{fontSize: '2.5rem', fontWeight: 900, marginBottom: '10px'}}>🍂 BLINDAGEM DE OUTONO 2026</h2>
+        <h2 style={{fontSize: '2.5rem', fontWeight: 900, marginBottom: '10px'}}>🍂 BLINDAGEM DE OUTONO 2026</h2>
             <p style={{fontSize: '1.3rem', fontWeight: 500}}>Aproveite nossas condições especiais para proteger sua família nesta estação.</p>
             <p style={{fontStyle: 'italic', fontSize: '1.1rem', opacity: 0.9}}>*Promoção válida de 20/03/2026 a 21/06/2026</p>
 
