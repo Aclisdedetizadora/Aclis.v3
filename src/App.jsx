@@ -81,7 +81,7 @@ export default function App() {
         /* Estilos da Seção Promocional (Ocultável) */
         .secao-promocional-fundo {
             background-color: #0b2b16; 
-            background-image: linear-gradient(rgba(11, 43, 22, 0.7), rgba(11, 43, 22, 0.7)), url('/1.jpg');
+            background-image: linear-gradient(rgba(11, 43, 22, 0.7), rgba(11, 43, 22, 0.7)), url('/1.png');
             background-size: cover; 
             background-position: center top; 
             background-repeat: no-repeat;
@@ -116,15 +116,20 @@ export default function App() {
         .btn-confirmar { background-color: var(--verde-whats); color: white; border: none; padding: 20px; border-radius: 50px; font-weight: 800; width: 100%; cursor: pointer; text-transform: uppercase; font-size: 1.1rem; transition: 0.3s; }
         .btn-confirmar:hover { background-color: #1ebc5a; transform: scale(1.02); }
 
-        /* Nova Estrutura de Layout Principal */
+        /* Nova Estrutura de Layout Principal com Arte de Fundo Fixa */
         #hero { 
-            background: linear-gradient(135deg, var(--verde-aclis) 0%, var(--verde-escuro) 100%); 
+            background-color: #0b2b16; 
+            background-image: linear-gradient(rgba(11, 43, 22, 0.75), rgba(11, 43, 22, 0.75)), url('/1.png');
+            background-size: cover;
+            background-position: center top;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
             padding: 140px 10%; 
             text-align: center; 
             color: var(--branco); 
         }
-        #hero h1 { font-size: 3.5rem; margin-bottom: 25px; line-height: 1.2; font-weight: 800; }
-        #hero p { font-size: 1.4rem; margin-bottom: 40px; opacity: 0.9; max-width: 800px; margin-left: auto; margin-right: auto; }
+        #hero h1 { font-size: 3.5rem; margin-bottom: 25px; line-height: 1.2; font-weight: 800; text-shadow: 0 2px 10px rgba(0,0,0,0.5); }
+        #hero p { font-size: 1.4rem; margin-bottom: 40px; opacity: 0.96; max-width: 800px; margin-left: auto; margin-right: auto; text-shadow: 0 2px 8px rgba(0,0,0,0.5); }
         
         .btn-cta-principal { background-color: var(--branco); color: var(--verde-aclis); padding: 20px 50px; border-radius: 50px; text-decoration: none; font-weight: 700; font-size: 1.3rem; box-shadow: 0 6px 20px rgba(0,0,0,0.15); display: inline-block; transition: 0.3s; }
         .btn-cta-principal:hover { background-color: var(--cinza-claro); transform: translateY(-2px); }
@@ -201,7 +206,7 @@ export default function App() {
           </section>
         )}
 
-        {/* HERO PRINCIPAL (AGORA NO TOPO QUANDO A PROMO ESTÁ OCULTA) */}
+        {/* HERO PRINCIPAL COM IMAGEM 1.PNG ATIVA NO FUNDO */}
         <section id="hero">
             <h1>Controle Profissional de Pragas</h1>
             <p>Soluções técnicas eficazes no controle de pragas urbanas para sua residência ou empresa com a máxima segurança sanitária.</p>
@@ -209,9 +214,9 @@ export default function App() {
         </section>
 
         <section id="diferenciais">
-            <div className="diferencial-item"><span>🛡️</span><h4>Garantia Técnica</h4><p>Assistência com reforço incluso conforme termo de garantia contratual.</p></div>
+            <div className="diferencial-item"><span>🛡️</span><h4>Garantia Técnico</h4><p>Assistência com reforço incluso conforme termo de garantia contratual.</p></div>
             <div className="diferencial-item"><span>🚀</span><h4>Agilidade</h4><p>Logística estruturada para atendimento imediato em São Paulo, ABC e Região Metropolitana.</p></div>
-            <div className="diferencial-item"><span>🧪</span><h4>Segurança</h4><p>Utilização exclusiva de saneantes regulamentados pela ANVISA de baixa toxicidade.</p></div>
+            <div className="diferencial-item"><span>🧪</span><h4>Segurança</h4><p>Utilização exclusiva de saneantes regulamentados pela de baixa toxicidade.</p></div>
         </section>
 
         <section id="servicos">
